@@ -1,4 +1,4 @@
-# Até aqui eu cheguei...?
+# Até aqui eu cheguei...
 
 Nessa aula de Javascript eu aprendi a fazer um simples jogo Gênesis com apenas algumas linhas de código! 
 
