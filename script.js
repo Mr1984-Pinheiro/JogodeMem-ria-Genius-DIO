@@ -7,10 +7,10 @@ let score = 0;
 //2 - amarelo
 //3 - azul
 
-const blue = document.querySelector('.blue');
-const red = document.querySelector('.red');
-const green = document.querySelector('.green');
-const yellow = document.querySelector('.yellow');
+const preta = document.querySelector('.preta');
+const marrom = document.querySelector('.marrom');
+const peru = document.querySelector('.peru');
+const roxo = document.querySelector('.roxo');
 
 //cria ordem aletoria de cores
 let shuffleOrder = () => {
@@ -18,7 +18,7 @@ let shuffleOrder = () => {
     order[order.length] = colorOrder;
     clickedOrder = [];
 
-    for(let i in order) {
+    for (let i in order) {
         let elementColor = createColorElement(order[i]);
         lightColor(elementColor, Number(i) + 1);
     }
@@ -37,13 +37,13 @@ let lightColor = (element, number) => {
 
 //checa se os botoes clicados são os mesmos da ordem gerada no jogo
 let checkOrder = () => {
-    for(let i in clickedOrder) {
-        if(clickedOrder[i] != order[i]) {
+    for (let i in clickedOrder) {
+        if (clickedOrder[i] != order[i]) {
             gameOver();
             break;
         }
     }
-    if(clickedOrder.length == order.length) {
+    if (clickedOrder.length == order.length) {
         alert(`Pontuação: ${score}\nVocê acertou! Iniciando próximo nível!`);
         nextLevel();
     }
@@ -57,19 +57,19 @@ let click = (color) => {
     setTimeout(() => {
         createColorElement(color).classList.remove('selected');
         checkOrder();
-    },250);
+    }, 250);
 }
 
 //funcao que retorna a cor
 let createColorElement = (color) => {
-    if(color == 0) {
-        return green;
-    } else if(color == 1) {
-        return red;
+    if (color == 0) {
+        return peru;
+    } else if (color == 1) {
+        return marrom;
     } else if (color == 2) {
-        return yellow;
+        return roxo;
     } else if (color == 3) {
-        return blue;
+        return preta;
     }
 }
 
@@ -97,10 +97,10 @@ let playGame = () => {
 }
 
 //eventos de clique para as cores
-green.onclick = () => click(0);
-red.onclick = () => click(1);
-yellow.onclick = () => click(2);
-blue.onclick = () => click(3);
+peru.onclick = () => click(0);
+marrom.onclick = () => click(1);
+roxo.onclick = () => click(2);
+preta.onclick = () => click(3);
 
 
 //inicio do jogo

@@ -24,25 +24,25 @@ body {
   height: 600px;
 }
 
-.blue {
+.preta {
   grid-area: azul;
   background-color: #000;
   border-bottom-right-radius: 100%;
 }
 
-.red {
+.marrom {
   grid-area: vermelho;
   background-color: brown;
   border-top-right-radius: 100%;
 }
 
-.yellow {
+.peru {
   grid-area: amarelo;
   background-color: peru;
   border-bottom-left-radius: 100%;
 }
 
-.green {
+.roxo {
   grid-area: verde;
   background-color: purple;
   border-top-left-radius: 100%;

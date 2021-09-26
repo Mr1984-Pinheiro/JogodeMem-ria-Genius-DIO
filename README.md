@@ -1,8 +1,8 @@
-# Olá, eu cheguei até aqui... 🙃
+# Oi, tudo bem? Chegou aqui através do curso, certo? 🙃
 
-Nessa aula de Javascript aprendi a fazer um simples jogo Gênesis com apenas algumas linhas de código! 
+Esse é o repositório da nossa aula de Javascript, na qual vamos fazer um simples jogo Gênesis com apenas algumas linhas de código! 
 
-### Os requisitos foram:
+### Os requisitos são:
 
 * [HTML básico](https://www.w3schools.com/html/)
 * [CSS básico](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
@@ -10,4 +10,4 @@ Nessa aula de Javascript aprendi a fazer um simples jogo Gênesis com apenas alg
  
 
 
-## 🚀 Amei Codar! 🚀
+## 🚀 Let's code! 🚀
